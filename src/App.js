@@ -3,6 +3,8 @@ import { BrowserRouter } from "react-router-dom";
 import HeaderSection from "./Components/HeaderSection";
 import HomeSection from "./Components/HomeSection";
 import AboutSection from "./Components/AboutSection";
+import SkillsSection from "./Components/SkillsSection";
+import ServiceSection from "./Components/ServiceSection";
 
 const App = () => (
   <BrowserRouter>
@@ -11,8 +13,8 @@ const App = () => (
         <HeaderSection />
         <HomeSection />
         <AboutSection />
-        {/* <SkillsSection /> */}
-        {/* <ServiceSection /> */}
+        <SkillsSection />
+        <ServiceSection />
         {/* <PortfolioSection /> */}
         {/* <ContactSection /> */}
         {/* <FooterSection /> */}
