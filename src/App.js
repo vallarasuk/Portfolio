@@ -1,30 +1,25 @@
-// import logo from './logo.svg';
 import "./App.css";
-import AboutSection from "./Components/AboutSection";
-import ContactSection from "./Components/ContactSection";
-import CopyRightSection from "./Components/CopyRightSection";
-import FooterSection from "./Components/FooterSection";
+import { BrowserRouter } from "react-router-dom";
 import HeaderSection from "./Components/HeaderSection";
 import HomeSection from "./Components/HomeSection";
-import PortfolioSection from "./Components/PortfolioSection";
-import ServiceSection from "./Components/ServiceSection";
-import SkillsSection from "./Components/SkillsSection";
-import "./Components/styles.css"
+import AboutSection from "./Components/AboutSection";
 
-function App() {
-  return (
-    <div className="container">
-      <HeaderSection />
-      <HomeSection />
-      <AboutSection />
-      <SkillsSection />
-      <ServiceSection />
-      <PortfolioSection />
-      <ContactSection />
-      <FooterSection />
-      <CopyRightSection />
+const App = () => (
+  <BrowserRouter>
+    <div className="container shadow p-sm-3 p-md-3 rounded-5">
+      <div className="px-md-5">
+        <HeaderSection />
+        <HomeSection />
+        <AboutSection />
+        {/* <SkillsSection /> */}
+        {/* <ServiceSection /> */}
+        {/* <PortfolioSection /> */}
+        {/* <ContactSection /> */}
+        {/* <FooterSection /> */}
+        {/* <CopyRightSection /> */}
+      </div>
     </div>
-  );
-}
+  </BrowserRouter>
+);
 
 export default App;
