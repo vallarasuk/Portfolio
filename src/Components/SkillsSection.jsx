@@ -16,7 +16,7 @@ const SkillsSection = () => {
           <div className="col">
             <div className="bars-box shadow p-5 rounded-5 ">
               <h3>HTML</h3>
-              <img src={"../Components/Assects/html.png"} alt="Demohhhhhhhhhhh" />
+              {/* <img src={"../Components/Assects/html.png"} alt="Demohhhhhhhhhhh" /> */}
               <span>95%</span>
               <div className="light-bar"></div>
               <div className="percent-bar html-bar"></div>
@@ -74,15 +74,33 @@ const SkillsSection = () => {
             </div>
           </div>
         </div>
-
-        {/* Images */}
-        {/* <div className="row">
-          <div className="col-md-6 col-lg-4 offset-md-3 offset-lg-0">
-            <div className="skills-img">
-              <img src="image/skill.png" alt="Skills Images" />
+        <div className="row">
+          {/* Bar 7 */}
+          <div className="col">
+            <div className="bars-box shadow p-5 rounded-5 ">
+              <h3>Wordpress</h3>
+              <span>80%</span>
+              <div className="light-bar"></div>
+              <div className="percent-bar github-bar"></div>
             </div>
           </div>
-        </div> */}
+          <div className="col">
+            <div className="bars-box shadow p-5 rounded-5 ">
+              <h3>Node Js</h3>
+              <span>80%</span>
+              <div className="light-bar"></div>
+              <div className="percent-bar github-bar"></div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="bars-box shadow p-5 rounded-5 ">
+              <h3>Mysql</h3>
+              <span>80%</span>
+              <div className="light-bar"></div>
+              <div className="percent-bar github-bar"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

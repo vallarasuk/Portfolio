@@ -63,7 +63,7 @@ const HomeSection = () => {
           <div className="col-lg-6 d-none mt-sm-4 d-sm-block justify-content-center ">
             <div className="home-img">
               <img
-                src="https://i.gifer.com/6M8G.gif"
+                src="https://i.pinimg.com/originals/2a/53/65/2a53651a35816f499270d8275fd5318f.gif"
                 width={"100%"}
                 height={"50%"}
                 alt="home images"

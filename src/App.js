@@ -4,7 +4,7 @@ import HeaderSection from "./Components/HeaderSection";
 import HomeSection from "./Components/HomeSection";
 import AboutSection from "./Components/AboutSection";
 import SkillsSection from "./Components/SkillsSection";
-import ServiceSection from "./Components/ServiceSection";
+import ResumeSection from "./Components/ResumeSection";
 
 const App = () => (
   <BrowserRouter>
@@ -14,7 +14,7 @@ const App = () => (
         <HomeSection />
         <AboutSection />
         <SkillsSection />
-        <ServiceSection />
+        <ResumeSection />
         {/* <PortfolioSection /> */}
         {/* <ContactSection /> */}
         {/* <FooterSection /> */}
