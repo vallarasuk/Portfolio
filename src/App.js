@@ -5,6 +5,7 @@ import HomeSection from "./Components/HomeSection";
 import AboutSection from "./Components/AboutSection";
 import SkillsSection from "./Components/SkillsSection";
 import ResumeSection from "./Components/ResumeSection";
+import PortfolioSection from "./Components/PortfolioSection";
 
 const App = () => (
   <BrowserRouter>
@@ -15,7 +16,7 @@ const App = () => (
         <AboutSection />
         <SkillsSection />
         <ResumeSection />
-        {/* <PortfolioSection /> */}
+        <PortfolioSection />
         {/* <ContactSection /> */}
         {/* <FooterSection /> */}
         {/* <CopyRightSection /> */}

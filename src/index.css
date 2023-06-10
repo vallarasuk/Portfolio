@@ -79,5 +79,14 @@ code {
 }
 
 .col {
-  margin: 15px!important;
+  margin: 15px !important;
+}
+
+.portfolio-content {
+  display: flex;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import SkillsSectionBar from "./lib/SkillsSectionBar";
 
 const SkillsSection = () => {
   return (
@@ -13,93 +13,59 @@ const SkillsSection = () => {
       <div className="skills-container">
         <div className="row  d-flex justify-content-evenly">
           {/* Bar 1 */}
-          <div className="col">
-            <div className="bars-box shadow p-5 rounded-5 ">
-              <h3>HTML</h3>
-              {/* <img src={"../Components/Assects/html.png"} alt="Demohhhhhhhhhhh" /> */}
-              <span>95%</span>
-              <div className="light-bar"></div>
-              <div className="percent-bar html-bar"></div>
-            </div>
-          </div>
+          <SkillsSectionBar title="HTML" percentage={95} barClass="html-bar" />
 
           {/* Bar 2 */}
-          <div className=" col">
-            <div className="bars-box shadow p-5 rounded-5 ">
-              <h3>CSS</h3>
-              <span>75%</span>
-              <div className="light-bar"></div>
-              <div className="percent-bar css-bar"></div>
-            </div>
-          </div>
+          <SkillsSectionBar title="CSS" percentage={75} barClass="css-bar" />
 
           {/* Bar 3 */}
-          <div className="col">
-            <div className="bars-box shadow p-5 rounded-5 ">
-              <h3>JavaScript</h3>
-              <span>70%</span>
-              <div className="light-bar"></div>
-              <div className="percent-bar js-bar"></div>
-            </div>
-          </div>
+          <SkillsSectionBar
+            title="JavaScript"
+            percentage={70}
+            barClass="js-bar"
+          />
         </div>
         <div className="row">
           {/* Bar 4 */}
-          <div className="col">
-            <div className="bars-box shadow p-5 rounded-5 ">
-              <h3>Bootstrap</h3>
-              <span>85%</span>
-              <div className="light-bar"></div>
-              <div className="percent-bar bootstrap-bar"></div>
-            </div>
-          </div>
+          <SkillsSectionBar
+            title="Bootstrap"
+            percentage={85}
+            barClass="bootstrap-bar"
+          />
 
           {/* Bar 5 */}
-          <div className="col">
-            <div className="bars-box shadow p-5 rounded-5 ">
-              <h3>React js</h3>
-              <span>65%</span>
-              <div className="light-bar"></div>
-              <div className="percent-bar react-bar"></div>
-            </div>
-          </div>
+          <SkillsSectionBar
+            title="React js"
+            percentage={65}
+            barClass="react-bar"
+          />
 
           {/* Bar 6 */}
-          <div className="col">
-            <div className="bars-box shadow p-5 rounded-5 ">
-              <h3>Github</h3>
-              <span>80%</span>
-              <div className="light-bar"></div>
-              <div className="percent-bar github-bar"></div>
-            </div>
-          </div>
+          <SkillsSectionBar
+            title="Github"
+            percentage={80}
+            barClass="github-bar"
+          />
         </div>
         <div className="row">
           {/* Bar 7 */}
-          <div className="col">
-            <div className="bars-box shadow p-5 rounded-5 ">
-              <h3>Wordpress</h3>
-              <span>80%</span>
-              <div className="light-bar"></div>
-              <div className="percent-bar github-bar"></div>
-            </div>
-          </div>
-          <div className="col">
-            <div className="bars-box shadow p-5 rounded-5 ">
-              <h3>Node Js</h3>
-              <span>80%</span>
-              <div className="light-bar"></div>
-              <div className="percent-bar github-bar"></div>
-            </div>
-          </div>
-          <div className="col">
-            <div className="bars-box shadow p-5 rounded-5 ">
-              <h3>Mysql</h3>
-              <span>80%</span>
-              <div className="light-bar"></div>
-              <div className="percent-bar github-bar"></div>
-            </div>
-          </div>
+          <SkillsSectionBar
+            title="Wordpress"
+            percentage={80}
+            barClass="github-bar"
+          />
+
+          <SkillsSectionBar
+            title="Node Js"
+            percentage={80}
+            barClass="github-bar"
+          />
+
+          <SkillsSectionBar
+            title="Mysql"
+            percentage={80}
+            barClass="github-bar"
+          />
         </div>
       </div>
     </section>
