@@ -29,11 +29,6 @@ const NavigationLinks = ({ isMenuOpen }) => {
           Resume
         </NavLink>
       </li>
-      {/* <li className="nav-item my-2 mx-md-2">
-        <NavLink className="nav-link" activeClassName="active" to="/service">
-          Works
-        </NavLink>
-      </li> */}
       <li className="nav-item my-2 mx-md-2">
         <NavLink className="nav-link" activeClassName="active" to="/portfolio">
           Portfolio

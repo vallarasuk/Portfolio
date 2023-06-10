@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faNavicon } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import NavigationLinks from "./lib/NavigationLinks";
 
@@ -12,21 +12,20 @@ const HeaderSection = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg  mt-4">
+    <nav className="navbar navbar-expand-lg mt-4">
       <div className="container px-md-5 shadow rounded-5 p-3 rounded-lg-pill">
-        <Link
-          className="navbar-brand"
-          to="https://www.linkedin.com/in/vallarasu-k/"
-        >
-          vallarasu_kanthasamy
+        <Link className="navbar-brand" to="/">
+          Vallarasu_Kanthasamy
         </Link>
-        <FontAwesomeIcon
-          onClick={handleMenuToggle}
+        <button
           className={`navbar-toggler ${isMenuOpen ? "active" : ""}`}
-          icon={faNavicon}
-        />
+          type="button"
+          onClick={handleMenuToggle}
+        >
+          <FontAwesomeIcon icon={faBars} />
+        </button>
         <div className={`collapse navbar-collapse ${isMenuOpen ? "show" : ""}`}>
-          <NavigationLinks />
+          <NavigationLinks isMenuOpen={isMenuOpen} />
         </div>
       </div>
     </nav>
