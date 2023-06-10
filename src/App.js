@@ -6,6 +6,9 @@ import AboutSection from "./Components/AboutSection";
 import SkillsSection from "./Components/SkillsSection";
 import ResumeSection from "./Components/ResumeSection";
 import PortfolioSection from "./Components/PortfolioSection";
+import ContactSection from "./Components/ContactSection";
+// import FooterSection from "./Components/FooterSection";
+import CopyRightSection from "./Components/CopyRightSection";
 
 const App = () => (
   <BrowserRouter>
@@ -17,9 +20,9 @@ const App = () => (
         <SkillsSection />
         <ResumeSection />
         <PortfolioSection />
-        {/* <ContactSection /> */}
+        <ContactSection />
         {/* <FooterSection /> */}
-        {/* <CopyRightSection /> */}
+        <CopyRightSection />
       </div>
     </div>
   </BrowserRouter>

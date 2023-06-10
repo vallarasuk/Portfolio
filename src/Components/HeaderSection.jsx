@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faNavicon } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import MenuToggle from "./lib/MenuToggle";
 import NavigationLinks from "./lib/NavigationLinks";
 
 const HeaderSection = () => {
@@ -19,11 +20,14 @@ const HeaderSection = () => {
         >
           vallarasu_kanthasamy
         </Link>
-        <MenuToggle
-          isMenuOpen={isMenuOpen}
-          handleMenuToggle={handleMenuToggle}
+        <FontAwesomeIcon
+          onClick={handleMenuToggle}
+          className={`navbar-toggler ${isMenuOpen ? "active" : ""}`}
+          icon={faNavicon}
         />
-        <NavigationLinks isMenuOpen={isMenuOpen} />
+        <div className={`collapse navbar-collapse ${isMenuOpen ? "show" : ""}`}>
+          <NavigationLinks />
+        </div>
       </div>
     </nav>
   );

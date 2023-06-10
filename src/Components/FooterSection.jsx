@@ -1,30 +1,29 @@
 import React from "react";
+import {
+  faGithub,
+  faLinkedin,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
+import SocialLinks from "./lib/SocialLinks";
 
 const FooterSection = () => {
   return (
-    <div>
-      {/* FOOTER SECTION */}
-      <section className="footer" id="footer">
-        <h2>VALLARASU K</h2>
+    <footer className="footer">
+      <div className="container">
+        <h2 className="footer-title">VALLARASU K</h2>
         <div className="footer-social">
-          {/* <a href="https://github.com/vallarasuk" target="_blank">
-            <i className="bx bxl-github"></i>
-          </a> */}
-          {/* <a
+          <SocialLinks href="https://github.com/vallarasuk" icon={faGithub} />
+          <SocialLinks
             href="https://www.linkedin.com/in/vallarasu-k-a57137208"
-            target="_blank"
-          >
-            <i className="bx bxl-linkedin"></i>
-          </a> */}
-          {/* <a
+            icon={faLinkedin}
+          />
+          <SocialLinks
             href="https://www.instagram.com/vallarasu_kanthasamy/"
-            target="_blank"
-          >
-            <i className="bx bxl-instagram"></i>
-          </a> */}
+            icon={faInstagram}
+          />
         </div>
-      </section>
-    </div>
+      </div>
+    </footer>
   );
 };
 

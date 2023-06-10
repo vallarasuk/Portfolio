@@ -1,13 +1,11 @@
 import SkillsSectionBar from "./lib/SkillsSectionBar";
+import Title from "./lib/Title";
 
 const SkillsSection = () => {
   return (
     <section className="skills container my-lg-5 p-lg-3 rounded-3" id="skills">
       {/* Heading */}
-      <div className="text-center my-3 mb-lg-5">
-        <span className="shadow p-3 rounded-pill px-4 h3">Skills</span>
-        <br />
-      </div>
+      <Title text={"Skills"} />
 
       {/* Skills Content */}
       <div className="skills-container">

@@ -8,7 +8,7 @@ const PortfolioCard = ({
   githubLink,
 }) => {
   return (
-    <div className="col-4">
+    <div className="col-lg-4 col-md-6 col-sm-6 my-3 my-md-0">
       <div className="card p-2 shadow rounded-5 border border-0 h-100">
         <div className="card-img-top">
           <a href={githubLink} className="text-decoration-none">
