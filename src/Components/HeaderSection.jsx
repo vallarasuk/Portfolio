@@ -12,8 +12,8 @@ const HeaderSection = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg shadow rounded-pill mt-4">
-      <div className="container px-md-5">
+    <nav className="navbar navbar-expand-lg  mt-4">
+      <div className="container px-md-5 shadow rounded-5 p-3 rounded-lg-pill">
         <Link
           className="navbar-brand"
           to="https://www.linkedin.com/in/vallarasu-k/"
