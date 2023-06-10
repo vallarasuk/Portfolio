@@ -44,13 +44,13 @@ const ResumeSection = () => {
               allowFullScreen
             ></iframe>
           </div>
-          <a
+          {/* <a
             href="https://www.canva.com/design/DAE5E529mFY/view?utm_content=DAE5E529mFY&utm_campaign=designshare&utm_medium=embeds&utm_source=link"
             target="_blank"
             rel="noopener noreferrer"
           >
             <span className="text-end d-block mx-3"> BY VALLARASU K</span>
-          </a>
+          </a> */}
         </div>
       </section>
     </div>
